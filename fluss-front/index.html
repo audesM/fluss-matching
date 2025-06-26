@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<!--
+Template name: Nova
+Template author: FreeBootstrap.net
+Author website: https://freebootstrap.net/
+License: https://freebootstrap.net/license
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fluss_Accueil </title>
+    <link href="assets/images/favicon.png" rel="icon">
+     
+    <!-- ======= Google Font =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <!-- End Google Font-->
+    
+    <!-- ======= Styles =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+    <!-- End Styles-->
+    
+    <!-- ======= Theme Style =======-->
+    <link href="assets/css/Astyle.css" rel="stylesheet">
+    <!-- End Theme Style-->
+    
+    <!-- ======= Apply theme =======-->
+    <script>
+      // Apply the theme as early as possible to avoid flicker
+      (function() {
+      const storedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
+    </script>
+  </head>
+  <body>
+    
+    
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+      
+      
+      <!-- ======= Header =======-->
+      <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+          
+          
+          <!-- Start Logo-->
+         <a class="navbar-brand w-auto" href="index.html">
+  <img class="logo img-fluid" src="assets/images/favicon.png" alt="Fluss Logo" style="width: 100px;">
+</a>
+          <!-- End Logo-->
+          
+          <!-- Start offcanvas-->
+          <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+            
+            
+            <div class="offcanvas-header">
+              <div class="offcanvas-header-logo">
+                <!-- If you use a text logo, uncomment this if it is commented-->
+                
+                <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
+                
+                <!-- If you plan to use an image logo, uncomment this if it is commented-->
+                <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+                  
+                  
+                  <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/favicon.png" alt="FreeBootstrap.net image placeholder"> 
+                  
+                  <!-- logo light--><img class="logo light img-fluid" src="assets/images/favicon.png" alt="FreeBootstrap.net image placeholder"></a>
+                
+              </div>
+              <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            
+            <div class="offcanvas-body align-items-lg-center">
+              
+              
+              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link" href="#about">A propos de nous</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Tarifs</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">Etapes</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link" href="#services">Blog</a></li>
+                 <!--<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown <i class="bi bi-chevron-down"></i></a>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="nav-link scroll-link dropdown-item" href="#">Multipages</a></li>
+                    <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
+                    <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                    <li class="nav-item dropstart"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropstart <i class="bi bi-chevron-right"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
+                        <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                        <li class="nav-item dropstart"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropstart <i class="bi bi-chevron-right"></i></a>
+                          <ul class="dropdown-menu">
+                            <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
+                            <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                            <li><a class="nav-link scroll-link dropdown-item" href="#">Something else here</a></li>
+                            <li class="nav-item dropend"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropend <i class="bi bi-chevron-right"></i></a>
+                              <ul class="dropdown-menu">
+                                <li><a class="nav-link scroll-link dropdown-item" href="#services">Services</a></li>
+                                <li><a class="nav-link scroll-link dropdown-item" href="#pricing">Pricing</a></li>
+                                <li><a class="nav-link scroll-link dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul> 
+                  
+                </li>-->
+                <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contact</a></li>
+              </ul>
+              
+            </div>
+          </div>
+          <!-- End offcanvas-->
+          
+          <div class="ms-auto w-auto">
+            
+            
+            <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2" href="connexion.html">Commencer</a>
+              
+              <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="21" x2="3" y1="6" y2="6"></line>
+                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                  <line x1="17" x2="3" y1="18" y2="18"></line>
+                </svg>
+                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </button>
+              
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      <!-- End Header-->
+      
+      <!-- ======= Main =======-->
+      <main>
+        
+        
+        <!-- ======= Hero =======-->
+        <section class="hero__v6 section" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="row">
+                  <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="0">L'avenir du freelancing au Maroc commence ici</span>
+                    <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Fluss <br>
+                Une plateforme de mise en relation entre <br>
+                              <span class="accent-text">Freelance & entrepreneur</span> </h1>
+                    <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">  Trouver le freelance idéal pour booster votre projet 🚀.</p>
+                    <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a class="btn" href="inscription_freelance.html">Je suis freelance</a><a class="btn btn-white-outline" href="inscription_entrepreneur.html">Je cherche un freelance 
+                        <svg class="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M7 7h10v10"></path>
+                          <path d="M7 17 17 7"></path>
+                        </svg></a></div>
+                    <!-- <div class="logos mb-4" data-aos="fade-up" data-aos-delay="400"><span class="logos-title text-uppercase mb-4 d-block">Trusted by major companies worldwide</span>
+                      <div class="logos-images d-flex gap-4 align-items-center"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1" style="width: 110px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2" style="width: 80px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3" style="width: 110px;"></div>
+                    </div>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="hero-img"><img class="img-main img-fluid rounded-4" src="assets/images/hero-img-1-min.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Hero-->
+        </section>
+        <!-- End Hero-->
+        
+        <!-- ======= About =======-->
+        <section class="about__v4 section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 order-md-2">
+                <div class="row justify-content-end">
+                  <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">A propos de nous</span>
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">La plateforme qui connecte les nouveaux entrepreneurs et freelances débutants marocains en toute simplicité.</h2>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                      <p>Fluss est la première plateforme de mise en relation entre nouveaux entrepreneurs et freelances débutants au Maroc. Grâce à un système de matching intelligent, nous permettons aux jeunes entrepreneurs de trouver facilement des freelances qualifiés pour leurs projets.</p>
+                    </div>
+                    <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Nos valeurs clés et nos vision</h4>
+                    <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up" data-aos-delay="400">
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Innovation</span></li>
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Securité</span></li>
+                      <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Transparence</span></li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center">
+                          <i class="bi bi-check"></i>
+                        </span>
+                        <span class="text">Accompagnement Personnalisé</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center">
+                          <i class="bi bi-check"></i>
+                        </span>
+                        <span class="text">Gestion Simplifiée</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center">
+                          <i class="bi bi-check"></i>
+                        </span>
+                        <span class="text">Transparence Financière</span>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"> 
+                <div class="img-wrap position-relative"><img class="img-fluid rounded-4" src="assets/images/entrepreuneur.png" alt="FreeBootstrap.net image placeholder" data-aos="fade-up" data-aos-delay="0">
+                  <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
+                    <div>
+                      <div>
+                      <h3 class="text-uppercase fw-bold">Notre Mission</h3>
+                      <p class="fs-5 mb-0">
+                        Chez Fluss, nous nous engageons à accompagner les freelances et les entrepreneurs
+                        ambitieux en leur offrant des leur collaboration au quotidien.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About-->
+        
+        <!-- ======= Features =======-->
+        <section class="section features__v2" id="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
+                  <div class="row">
+                    <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+                      <div class="row"> 
+                        <div class="col-lg-11">
+                          <div class="h-100 flex-column justify-content-between d-flex">
+                            <div>
+                              <h2 class="mb-4">Caractéristiques</h2>
+                              <p class="mb-5">Les avantages techniques et la valeur ajoutée de Fluss</p>
+                            </div>
+                            <div class="align-self-start"><a class="glightbox btn btn-play d-inline-flex align-items-center gap-2" href="https://www.youtube.com/watch?v=DQx96G4yHd8" data-gallery="video"><i class="bi bi-play-fill"></i> Watch the Video</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="row justify-content-end">
+                        <div class="col-lg-11">
+                          <div class="row">
+                            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                              <div class="icon text-center mb-4"><i class="bi bi-person-check fs-4"></i></div>
+                              <h3 class="fs-6 fw-bold mb-3">Matching intelligent</h3>
+                              <p> Un algorithme qui connecte les bons profils.</p>
+                            </div>
+                            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                              <div class="icon text-center mb-4"><i class="bi bi-graph-up fs-4"></i></div>
+                              <h3 class="fs-6 fw-bold mb-3">Vérification des profils</h3>
+                              <p> Chaque utilisateur est validé pour éviter les arnaques.</p>
+                            </div>
+                            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                              <div class="icon text-center mb-4"><i class="bi bi-shield-lock fs-4"></i></div>
+                              <h3 class="fs-6 fw-bold mb-3">Evaluations et recommandations</h3>
+                              <p>Les entrepreneurs et freelances peuvent se noter pour plus de transparence.</p>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Features-->
+        
+        <!-- ======= Pricing =======-->
+        <section class="section pricing__v2" id="pricing">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-5 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Tarifs</span>
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Découvrez comment Fluss vous aide à développer votre activité </h2>
+                <p data-aos="fade-up" data-aos-delay="200">tout en garantissant une expérience fluide et optimisée.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-5 rounded-4 price-table h-100">
+                  <h3>Commission Standard</h3>
+                  <p>Fluss perçoit une commission sur chaque transaction effectuée entre un entrepreneur et un freelance. Ce modèle garantit une rémunération équitable et un service sécurisé.</p>
+                  <div class="price mb-4"><strong>6%</strong><span>/ Transaction</span></div>
+                  <div><a class="btn" href="#">Commencer</a></div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+              
+              </div>
+             <!-- <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+                <div class="p-5 rounded-4 price-table popular h-100">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="mb-3">Abonnement Premium </h3>
+                      <p>Optimize your business financial operations with our tailored business plans.</p>
+                      <div class="price mb-4"><strong class="me-1">$29</strong><span>/ month</span></div>
+                      <div><a class="btn btn-white hover-outline" href="#">Get Started</a></div>
+                    </div>
+                    <div class="col-md-6 pricing-features">
+                      <h4 class="text-uppercase fw-bold mb-3">Features</h4>
+                      <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>Personalized financial insights and reports</span></li>
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>Priority customer support</span></li>
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>Access to exclusive investment opportunities</span></li>
+                        <li class="d-flex gap-2 align-items-start mb-0"><span class="icon rounded-circle position-relative mt-1"><i class="bi bi-check"></i></span><span>AI-driven financial recommendations</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </section>
+        <!-- End Pricing-->
+        
+        <!-- ======= How it works =======-->
+            <section class="section howitworks__v1" id="how-it-works">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 text-center mx-auto">
+              <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Comment ça marche</span>
+              <h2 data-aos="fade-up" data-aos-delay="100">Commencez avec Fluss en 4 étapes</h2>
+              <p data-aos="fade-up" data-aos-delay="200">
+                Fluss vous accompagne pour gérer vos missions, vos paiements et votre collaboration en toute simplicité. Voici comment démarrer :
+              </p>
+            </div>
+          </div>
+          <div class="row g-md-5">
+            <div class="col-md-6 col-lg-3">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative" data-aos="fade-up" data-aos-delay="0">
+                <div data-aos="fade-right" data-aos-delay="500">
+                  <img class="arch-line" src="assets/images/arch-line.svg" alt="FreeBootstrap.net image placeholder">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
+                <div>
+                  <h3 class="fs-5 mb-4">Créez votre compte</h3>
+                  <p>Inscrivez-vous gratuitement sur Fluss et configurez votre profil freelance ou entreprise en quelques clics.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+              <div class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1100">
+                  <img class="arch-line reverse" src="assets/images/arch-line-reverse.svg" alt="FreeBootstrap.net image placeholder">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
+                <h3 class="fs-5 mb-4">Publiez vos missions</h3>
+                <p>Définissez vos besoins, objectifs et délais pour trouver des freelances ou des partenaires adaptés.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1700">
+                  <img class="arch-line" src="assets/images/arch-line.svg" alt="FreeBootstrap.net image placeholder">
+                </div>
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
+                <h3 class="fs-5 mb-4">Collaborez facilement</h3>
+                <p>Utilisez la messagerie intégrée, le calendrier et les outils de collaboration pour suivre l’avancement de vos projets.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
+              <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
+                <div>
+                  <h3 class="fs-5 mb-4">Gérez vos paiements</h3>
+                  <p>Suivez vos revenus et paiements de manière sécurisée, et concentrez-vous sur la croissance de votre activité.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- End How it works-->
+        
+        <!-- ======= Stats =======-->
+       <section class="stats__v3 section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex flex-wrap content rounded-4" data-aos="fade-up" data-aos-delay="0">
+                  <div class="rounded-borders">
+                    <div class="rounded-border-1"></div>
+                    <div class="rounded-border-2"></div>
+                    <div class="rounded-border-3"></div>
+                  </div>
+                  <!-- Stat 1 : Missions Réalisées -->
+                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                      <h3 class="fs-1 fw-bold">
+                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="2">0</span><span>+</span>
+                      </h3>
+                      <p class="mb-0">Missions Réalisées</p>
+                    </div>
+                  </div>
+                  <!-- Stat 2 : Freelances Actifs -->
+                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                      <h3 class="fs-1 fw-bold">
+                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2">0</span><span>+</span>
+                      </h3>
+                      <p class="mb-0">Freelances Actifs</p>
+                    </div>
+                  </div>
+                  <!-- Stat 3 : Taux de Satisfaction -->
+                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                      <h3 class="fs-1 fw-bold">
+                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2">0</span><span>%</span>
+                      </h3>
+                      <p class="mb-0">Taux de Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Stats-->
+        
+        <!-- ======= Services =======-->
+       <section class="section services__v3" id="services">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8 mx-auto text-center">
+        <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Nos Services</span>
+        <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">
+          Nous simplifions la collaboration entre freelances débutants et jeunes entrepreneurs.
+        </h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+          <div>
+            <span class="icon mb-4">
+              <i class="bi bi-cloud-upload"></i>
+            </span>
+            <h3 class="fs-5 mb-3">Publier un projet</h3>
+            <p class="mb-4">Les entrepreneurs décrivent leurs besoins et reçoivent des propositions de freelances.</p>
+          </div>
+          <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="inscription_freelance.html">
+            <span class="icons">
+              <i class="icon-1 bi bi-arrow-right-short"></i>
+              <i class="icon-2 bi bi-arrow-right-short"></i>
+            </span>
+            <span>Commencer</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+          <div>
+            <span class="icon mb-4">
+              <i class="bi bi-person-check"></i>
+            </span>
+            <h3 class="fs-5 mb-3">Proposer ses services</h3>
+            <p class="mb-4">Les freelances affichent leurs compétences et peuvent être contactés facilement.</p>
+          </div>
+          <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="inscription_freelance.html">
+            <span class="icons">
+              <i class="icon-1 bi bi-arrow-right-short"></i>
+              <i class="icon-2 bi bi-arrow-right-short"></i>
+            </span>
+            <span>Commencer</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+          <div>
+            <span class="icon mb-4">
+              <i class="bi bi-chat-dots"></i>
+            </span>
+            <h3 class="fs-5 mb-3">Messagerie intégrée</h3>
+            <p class="mb-4">Pour faciliter les échanges et négociations entre freelances et entrepreneurs.</p>
+          </div>
+          <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="inscription_freelance.html">
+            <span class="icons">
+              <i class="icon-1 bi bi-arrow-right-short"></i>
+              <i class="icon-2 bi bi-arrow-right-short"></i>
+            </span>
+            <span>commencer</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
+          <div>
+            <span class="icon mb-4">
+              <i class="bi bi-shield-lock"></i>
+            </span>
+            <h3 class="fs-5 mb-3">Paiements sécurisés</h3>
+            <p class="mb-4">Protection des transactions via la plateforme Fluss.</p>
+          </div>
+          <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="inscription_freelance.html">
+            <span class="icons">
+              <i class="icon-1 bi bi-arrow-right-short"></i>
+              <i class="icon-2 bi bi-arrow-right-short"></i>
+            </span>
+            <span>Commencer</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <!-- Services-->
+        
+        <!-- ======= Testimonials =======-->
+      <section class="section testimonials__v2" id="testimonials">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-5 mx-auto text-center">
+        <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Témoignages</span>
+        <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Ce que nos utilisateurs disent</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Découvrez comment Fluss simplifie la collaboration et soutient les freelances et les jeunes entrepreneurs.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4" data-masonry="{&quot;percentPosition&quot;: true }">
+      
+      <!-- Témoignage 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="testimonial rounded-4 p-4">
+          <blockquote class="mb-3">
+            &ldquo;
+            Grâce à Fluss, j’ai trouvé des missions en toute simplicité et sécurisé mes paiements. La messagerie intégrée facilite la communication avec mes clients.
+            &rdquo;
+          </blockquote>
+          <div class="testimonial-author d-flex gap-3 align-items-center">
+            <div class="author-img">
+              <img class="rounded-circle img-fluid" src="assets/images/user-icon-on-transparent-background-free-png.webp" alt="Fluss user">
+            </div>
+            <div class="lh-base">
+              <strong class="d-block">Lina Dupont</strong>
+              <span>Freelance Graphiste</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Témoignage 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="testimonial rounded-4 p-4">
+          <blockquote class="mb-3">
+            &ldquo;
+            Grâce à Fluss, j’ai trouvé des missions en toute simplicité et sécurisé mes paiements. La messagerie intégrée facilite la communication avec mes clients.
+            &rdquo;
+          </blockquote>
+          <div class="testimonial-author d-flex gap-3 align-items-center">
+            <div class="author-img">
+              <img class="rounded-circle img-fluid" src="assets/images/user-icon-on-transparent-background-free-png.webp" alt="Fluss user">
+            </div>
+            <div class="lh-base">
+              <strong class="d-block">Grâcet</strong>
+              <span>Developpement web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Témoignage 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="testimonial rounded-4 p-4">
+          <blockquote class="mb-3">
+            &ldquo;
+            Grâce à Fluss, j’ai trouvé des missions en toute simplicité et sécurisé mes paiements. La messagerie intégrée facilite la communication avec mes clients.
+            &rdquo;
+          </blockquote>
+          <div class="testimonial-author d-flex gap-3 align-items-center">
+            <div class="author-img">
+              <img class="rounded-circle img-fluid" src="assets/images/user-icon-on-transparent-background-free-png.webp" alt="Fluss user">
+            </div>
+            <div class="lh-base">
+              <strong class="d-block">George</strong>
+              <span>Marketing digital</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <!-- Testimonials-->
+        
+        <!-- ======= FAQ =======
+        <section class="section faq__v2" id="faq">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">FAQ</span>
+                <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Frequently Asked Questions</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Utilize our tools to develop your concepts and bring your vision to life. Once complete, effortlessly share your creations.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-content">
+                  <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"> What services does your web agency offer? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
+                        <div class="accordion-body">Our web agency offers a comprehensive range of services including web design and development, e-commerce solutions, SEO optimization, content creation, website maintenance, and digital marketing strategies. We tailor our services to meet the unique needs of each client, ensuring a customized approach to every project.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"> How much does it cost to build a website? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
+                        <div class="accordion-body">The cost of building a website can vary widely depending on the complexity, features, and specific requirements of your project. We offer several pricing packages to accommodate different budgets and needs. After an initial consultation, we can provide a detailed quote based on your specific goals and objectives.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree"> How long does it take to design and develop a website? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
+                        <div class="accordion-body">The timeline for designing and developing a website depends on the project&apos;s complexity and scope. Typically, a standard business website takes about 4-6 weeks to complete, while more complex projects like e-commerce sites or custom applications may take longer. We work closely with our clients to establish a realistic timeline and keep you informed throughout the process.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour"> Will my website be mobile-friendly? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFour">
+                        <div class="accordion-body">Absolutely! All the websites we design and develop are fully responsive, meaning they are optimized to work seamlessly across all devices, including desktops, tablets, and smartphones. Ensuring a great user experience on mobile devices is a top priority in our development process.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive"> Do you provide ongoing support and maintenance for websites? </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFive">
+                        <div class="accordion-body">Yes, we offer ongoing support and maintenance services to ensure your website remains up-to-date, secure, and functioning smoothly. Our maintenance packages can include regular updates, security monitoring, backups, and technical support to address any issues that may arise. We&apos;re here to help you keep your website running efficiently long after it&apos;s launched.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- End FAQ-->
+        </section>
+        <!-- End FAQ-->
+        
+        <!-- ======= Contact =======-->
+      <section class="section contact__v2" id="contact">
+                <div class="container">
+                  <div class="row mb-5">
+                    <div class="col-md-6 col-lg-7 mx-auto text-center">
+                      <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Contact</span>
+                      <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Contactez-nous</h2>
+                      <p data-aos="fade-up" data-aos-delay="100">
+                        Une question sur Fluss ? Besoin d'aide ou d'informations supplémentaires ? Écrivez-nous et notre équipe vous répondra rapidement !
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="d-flex gap-5 flex-column">
+                        <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
+                          <div class="icon d-block"><i class="bi bi-telephone"></i></div>
+                          <span>
+                            <span class="d-block">Téléphone</span>
+                            <span>+212 642783045</span>
+                          </span>
+                        </div>
+                        <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+                          <div class="icon d-block"><i class="bi bi-envelope"></i></div>
+                          <span>
+                            <span class="d-block">Email</span>
+                            <strong>contact@fluss.ma</strong>
+                          </span>
+                        </div>
+                        <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+                          <div class="icon d-block"><i class="bi bi-geo-alt"></i></div>
+                          <span>
+                            <span class="d-block">Adresse</span>
+                            <address class="fw-bold">
+                              Casablanca, Maroc
+                            </address>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-wrapper" data-aos="fade-up" data-aos-delay="300">
+                        <form id="contactForm">
+                          <div class="row gap-3 mb-3">
+                            <div class="col-md-12">
+                              <label class="mb-2" for="name">Nom</label>
+                              <input class="form-control" id="name" type="text" name="name" required>
+                            </div>
+                            <div class="col-md-12">
+                              <label class="mb-2" for="email">Email</label>
+                              <input class="form-control" id="email" type="email" name="email" required>
+                            </div>
+                          </div>
+                          <div class="row gap-3 mb-3">
+                            <div class="col-md-12">
+                              <label class="mb-2" for="subject">Objet</label>
+                              <input class="form-control" id="subject" type="text" name="subject">
+                            </div>
+                          </div>
+                          <div class="row gap-3 gap-md-0 mb-3">
+                            <div class="col-md-12">
+                              <label class="mb-2" for="message">Message</label>
+                              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary fw-semibold" type="submit">Envoyer le message</button>
+                        </form>
+                        <div class="mt-3 d-none alert alert-success" id="successMessage">Message envoyé avec succès !</div>
+                        <div class="mt-3 d-none alert alert-danger" id="errorMessage">L'envoi du message a échoué. Veuillez réessayer plus tard.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+        <!-- End Contact-->
+        
+       <!-- ======= Footer =======-->
+<footer class="footer pt-5 pb-5">
+  <div class="container">
+   <!--  <div class="row mb-5 pb-4">
+      <div class="col-md-7">
+        <h2 class="fs-5">Inscrivez-vous à notre newsletter</h2>
+        <p>Recevez les dernières actualités et conseils de Fluss directement dans votre boîte mail !</p>
+      </div>
+      <div class="col-md-5">
+        <form class="d-flex gap-2">
+          <input class="form-control" type="email" placeholder="Votre email" required>
+          <button class="btn btn-primary fs-6" type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </div>-->
+    <div class="row justify-content-between mb-5 g-xl-5">
+      <div class="col-md-4 mb-5 mb-lg-0">
+        <h3 class="mb-3">À propos</h3>
+        <p class="mb-4">
+          Fluss simplifie la collaboration entre freelances et entrepreneurs en proposant des outils innovants pour concrétiser vos idées et faire grandir vos projets.
+        </p>
+      </div>
+      <div class="col-md-7">
+        <div class="row g-2">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+             <h4>Nos services</h4>
+          <ul>
+            <li><a href="#">Mise en relation freelances-entrepreneurs</a></li>
+            <li><a href="#">Coaching entrepreneurial</a></li>
+            <li><a href="#">Gestion de projet</a></li>
+          
+          </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+             <h4>Freelances</h4>
+          <ul>
+            <li><a href="#">Trouver des missions freelances</a></li>
+            <li><a href="#">Devenir freelance au Maroc</a></li>
+            <li><a href="#">Gagner en visibilité</a></li>
+           
+          </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
+            <h3 class="mb-3">Contact</h3>
+            <p class="d-flex mb-3">
+              <i class="bi bi-geo-alt-fill me-3"></i>
+              <span>Casablanca, Maroc</span>
+            </p>
+            <a class="d-flex mb-3" href="mailto:contact@fluss.fr">
+              <i class="bi bi-envelope-fill me-3"></i>
+              <span>contact@fluss.fr</span>
+            </a>
+            <a class="d-flex mb-3" href="tel://+33123456789">
+              <i class="bi bi-telephone-fill me-3"></i>
+              <span>+212 778753439</span>
+            </a>
+            <a class="d-flex mb-3" href="#">
+              <i class="bi bi-globe me-3"></i>
+              <span>www.Fluss.ma</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="container copyright text-center mt-4">
+    <div class="credits">
+      Développé avec ❤ par <strong>Audes & Stécy</strong> pour les freelances et entrepreneurs ambitieux.
+    </div>
+  </div>
+</footer>
+
+        <!-- End Footer-->
+        
+      </main>
+    </div>
+    
+    <!-- ======= Back to Top =======-->
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <!-- End Back to top-->
+    
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/send_email.js"></script>
+    <!-- End JavaScripts-->
+     
+<!-- Flussy Assistant -->
+<div id="flussy-container">
+  <div id="flussy-header">💬 Flussy - Votre assistant virtuel</div>
+  <div id="flussy-messages"></div>
+  <div id="flussy-input-area">
+    <input type="text" id="flussy-input" placeholder="Écrivez votre réponse ici...">
+  </div>
+</div>
+<button id="flussy-toggle" title="Besoin d'aide ?">💬</button>
+
+<style>
+#flussy-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  max-height: 500px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  z-index: 1050; /* pour être au-dessus des overlays Bootstrap */
+}
+
+#flussy-header {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#flussy-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flussy-message {
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 80%;
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+}
+
+.flussy-message.bot {
+  background: #f1f1f1;
+  align-self: flex-start;
+}
+
+.flussy-message.user {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+#flussy-input-area {
+  border-top: 1px solid #ccc;
+  padding: 8px;
+}
+
+#flussy-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.flussy-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.flussy-option-btn {
+  flex: 1 1 100%;
+  background: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.flussy-option-btn:hover {
+  background: #0056b3;
+}
+
+#flussy-toggle {
+  display: block !important;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 12000 !important;  /* plus haut que tout overlay ou menu latéral */
+}
+
+
+
+#flussy-toggle:hover {
+  background: #0056b3;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const flussyContainer = document.getElementById('flussy-container');
+  const flussyMessages = document.getElementById('flussy-messages');
+  const flussyInput = document.getElementById('flussy-input');
+  const flussyToggle = document.getElementById('flussy-toggle');
+
+  let userName = '';
+  let currentStep = 0;
+
+  flussyToggle.addEventListener('click', () => {
+    flussyContainer.style.display = flussyContainer.style.display === 'none' ? 'flex' : 'none';
+    if (currentStep === 0) {
+      setTimeout(() => {
+        addBotMessage("👋 Bonjour, je suis Flussy, votre assistant virtuel sur Fluss. 😊");
+        addBotMessage("Avant de commencer, puis-je connaître votre prénom ?");
+        currentStep = 1;
+      }, 500);
+    }
+  });
+
+  flussyInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter' && flussyInput.value.trim() !== '') {
+      const userInput = flussyInput.value.trim();
+      addUserMessage(userInput);
+      flussyInput.value = '';
+
+      if (currentStep === 1) {
+        userName = userInput;
+        addBotMessage(`Enchanté ${userName} ! 😊`);
+        addBotMessage("🌍 Fluss est la première plateforme marocaine qui connecte freelances et entrepreneurs débutants grâce à un moteur de matching intelligent et une IA d’aide au choix.");
+        addBotMessage("Voici ce que je peux faire pour vous aujourd'hui 👇");
+        showOptions();
+        currentStep = 2;
+      }
+    }
+  });
+
+  function addBotMessage(text) {
+    const msg = document.createElement('div');
+    msg.className = 'flussy-message bot';
+    msg.textContent = text;
+    flussyMessages.appendChild(msg);
+    msg.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function addUserMessage(text) {
+    const msg = document.createElement('div');
+    msg.className = 'flussy-message user';
+    msg.textContent = text;
+    flussyMessages.appendChild(msg);
+    msg.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function showOptions() {
+    const optionsDiv = document.createElement('div');
+    optionsDiv.className = 'flussy-options';
+
+    const options = [
+      { label: '🔎 Découvrir la vision de Fluss', action: handleVision },
+      { label: '💼 Explorer les services', action: handleServices },
+      { label: '📝 M’inscrire', action: handleRegistration },
+      { label: '📊 Accéder au tableau de bord', action: handleDashboard },
+      { label: '❌ Quitter le chat', action: handleQuit }
+    ];
+
+    options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'flussy-option-btn';
+      btn.textContent = opt.label;
+      btn.addEventListener('click', opt.action);
+      optionsDiv.appendChild(btn);
+    });
+
+    flussyMessages.appendChild(optionsDiv);
+    optionsDiv.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function handleVision() {
+    addBotMessage("🌍 Fluss est la première plateforme au Maroc dédiée à la mise en relation des freelances et entrepreneurs débutants. Elle facilite les collaborations grâce à un algorithme de matching intelligent et une IA qui vous accompagne.");
+  }
+
+  function handleServices() {
+    addBotMessage("🛠️ Nos services incluent : matching de profils, chat IA, tableau de bord personnalisé, blog et ressources utiles.");
+  }
+
+  function handleRegistration() {
+    addBotMessage("📝 Pour vous inscrire, cliquez sur l'un des boutons 'Je suis un freelance' ou 'Je cherche un freelance' de la page d'accueil.");
+    addBotMessage("Ensuite, vous pourrez vous connecter en cliquant sur le bouton 'Commencer' en haut à droite de la page.");
+  }
+
+  function handleDashboard() {
+    addBotMessage("📊 Avant d'accéder à votre tableau de bord, vous devez être inscrit sur Fluss.");
+    addBotMessage("👉 Pour vous inscrire, cliquez sur 'Je suis un freelance' ou 'Je cherche un freelance' sur la page d'accueil.");
+    addBotMessage("Une fois inscrit, cliquez sur 'Commencer' pour vous connecter et accéder à votre tableau de bord personnalisé.");
+  }
+
+  function handleQuit() {
+    addBotMessage(`Merci ${userName || ''} d'avoir utilisé Flussy. À très bientôt sur Fluss ! 😊`);
+    setTimeout(() => {
+      flussyContainer.style.display = 'none';
+      flussyMessages.innerHTML = '';
+      currentStep = 0;
+    }, 3000);
+  }
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fluss - Connexion</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="assets/vendors/feather/feather.css">
+  <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <style>
+    .brand-logo h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #3496fd;
+      margin: 0;
+    }
+    .auth-form-light {
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .auth-form-btn {
+      background-color: #3496fd;
+      border-color: #3496fd;
+    }
+    .auth-form-btn:hover {
+      background-color: #3496fd;
+      border-color: #3496fd;
+    }
+    .text-primary {
+      color: #3496fd !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+     <div>
+      <a class="navbar-brand w-auto" href="index.html">
+  <img class="logo img-fluid" src="assets/images/favicon.png" alt="Fluss Logo" style="width: 100px;"> 
+</a>
+      
+    </div>
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo text-center mb-4">
+                <!-- Utiliser un titre texte ou un logo image -->
+                <h1>Inscription Freelance</h1>
+                <!-- <img src="../../images/fluss-logo.png" alt="logo" style="width: 50%;"> -->
+              </div>
+              <h4>Bienvenue sur Fluss !</h4>
+              <h6 class="font-weight-light mb-4"></h6>
+              <form class="pt-3" id="freelanceForm">
+                <h4>Informations Personnelles</h4>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="Nom" placeholder="Nom" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="Prénom" placeholder="Prénom" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="Motdepasse" placeholder="Mot de passe" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="Motdepasse" placeholder="Confirmation de mot de passe" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Adresse email" required>
+                </div>
+                <div class="form-group">
+                      <select class="form-control form-control-lg" id="Ville">
+                        <option value="">-- Sélectionnez votre ville --</option>
+                        <option value="Casablanca">Casablanca</option>
+                        <option value="Rabat">Rabat</option>
+                        <option value="Fès">Fès</option>
+                        <option value="Marrakech">Marrakech</option>
+                        <option value="Tanger">Tanger</option>
+                        <option value="Agadir">Agadir</option>
+                        <option value="Meknès">Meknès</option>
+                        <option value="Oujda">Oujda</option>
+                        <option value="Tétouan">Tétouan</option>
+                        <option value="Laâyoune">Laâyoune</option>
+                        <option value="Mohammédia">Mohammédia</option>
+                        <option value="Khouribga">Khouribga</option>
+                        <option value="Béni Mellal">Béni Mellal</option>
+                        <option value="El Jadida">El Jadida</option>
+                        <option value="Nador">Nador</option>
+                        <option value="Kénitra">Kénitra</option>
+                        <option value="Taza">Taza</option>
+                        <option value="Errachidia">Errachidia</option>
+                        <option value="Guelmim">Guelmim</option>
+                        <option value="Al Hoceïma">Al Hoceïma</option>
+                        <option value="Essaouira">Essaouira</option>
+                        <option value="Settat">Settat</option>
+                        <option value="Safi">Safi</option>
+                        <option value="Ouarzazate">Ouarzazate</option>
+                        <option value="Larache">Larache</option>
+                        <option value="Berkane">Berkane</option>
+                        <option value="Ksar El Kebir">Ksar El Kebir</option>
+                        <option value="Ouezzane">Ouezzane</option>
+                        <option value="Azrou">Azrou</option>
+                        <option value="Tiznit">Tiznit</option>
+                        <option value="Dakhla">Dakhla</option>
+                        <option value="Tan-Tan">Tan-Tan</option>
+                        <option value="Midelt">Midelt</option>
+                      </select>
+                </div>
+
+                <div class="form-group">
+                  <input type="number" class="form-control form-control-lg" id="Numero" placeholder="Numéro" required>
+                </div>
+                <div class="form-group">
+                  <input type="date" class="form-control form-control-lg" id="DateN" placeholder="Date de naissance" required>
+                </div>
+
+                <h4>Informations Professionnelles</h4>
+
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="Compétences" placeholder="Mes compétences (Ex:Developpement Web)" required>
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control form-control-lg" id="AnnéeExperience" placeholder="Années de d'expéreince">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control form-control-lg" id="TarifH" placeholder="Tarif horaires (en DH)" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="Dispo" placeholder="Disponibilité">
+                </div>
+                <div class="mt-3">
+                  <button type="submit" class="btn btn-block btn-lg font-weight-medium auth-form-btn">S'inscrire</button>
+                </div>
+                <br>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="cgu">
+                  <label for="cgu">J'accepte les CGU et la politique de confidentialité</label>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                  Vous avez Déjà un compte ? <a href="connexion.html" class="text-primary">Acceder à mon compte</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/template.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
+  <!-- endinject -->
+   <script>
+  document.getElementById("freelanceForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = {
+      nom: document.getElementById("Nom").value,
+      prenom: document.getElementById("Prénom").value,
+      email: document.getElementById("email").value,
+      mot_de_passe: document.getElementById("Motdepasse").value,
+      ville: document.getElementById("Ville").value,
+      numero: document.getElementById("Numero").value,
+      date_naissance: document.getElementById("DateN").value,
+      competences: document.getElementById("Compétences").value,
+      annee_experience: document.getElementById("AnnéeExperience").value,
+      tarif_horaire: document.getElementById("TarifH").value,
+      disponibilite: document.getElementById("Dispo").value
+    };
+
+    try {
+      const response = await fetch('http://localhost:3000/api/inscription-freelance', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+      alert(result.message);
+    } catch (error) {
+      alert("Erreur lors de l'inscription.");
+    }
+  });
+</script>
+
+</body>
+
+</html>

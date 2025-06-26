@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fluss - Connexion</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="assets/vendors/feather/feather.css">
+  <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <style>
+    .brand-logo h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #3496fd;
+      margin: 0;
+    }
+    .auth-form-light {
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .auth-form-btn {
+      background-color: #3496fd;
+      border-color: #3496fd;
+    }
+    .auth-form-btn:hover {
+      background-color: #3496fd;
+      border-color: #3496fd;
+    }
+    .text-primary {
+      color: #3496fd !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+     <div>
+      <a class="navbar-brand w-auto" href="index.html">
+  <img class="logo img-fluid" src="assets/images/favicon.png" alt="Fluss Logo" style="width: 100px;"> 
+</a>
+      
+    </div>
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo text-center mb-4">
+                <!-- Utiliser un titre texte ou un logo image -->
+                <h1>Fluss</h1>
+                <!-- <img src="../../images/fluss-logo.png" alt="logo" style="width: 50%;"> -->
+              </div>
+              <h4>Bienvenue sur Fluss !</h4>
+              <h6 class="font-weight-light mb-4">Connectez-vous pour accéder à votre espace freelance.</h6>
+              <form class="pt-3">
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Adresse email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="password" placeholder="Mot de passe">
+                </div>
+                <div class="mt-3">
+                  <button type="submit" class="btn btn-block btn-lg font-weight-medium auth-form-btn">Se connecter</button>
+                </div>
+                <div class="my-2 d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      Rester connecté
+                    </label>
+                  </div>
+                  <a href="#" class="auth-link text-black">Mot de passe oublié ?</a>
+                </div>
+                <div class="mb-2">
+                  <button type="button" class="btn btn-block btn-facebook auth-form-btn">
+                    <i class="ti-facebook mr-2"></i>Se connecter avec Facebook
+                  </button>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                  Vous n'avez pas encore de compte ? <a href="register.html" class="text-primary">Créer un compte</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/template.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
+  <!-- endinject -->
+ <script>
+document.querySelector("form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const mot_de_passe = document.getElementById("password").value;
+
+  try {
+    const response = await fetch("http://localhost:3000/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email, mot_de_passe })
+    });
+
+    const data = await response.json();
+if (!response.ok) {
+  alert(data.message || "Erreur lors de la connexion.");
+  return;
+}
+
+// Connexion réussie
+sessionStorage.setItem('userId', data.user.id);
+sessionStorage.setItem('role', data.user.role);
+
+    // ✅ rediriger selon le rôle
+    if (data.user.role === "freelance") {
+      window.location.href = "dashboard_freelance.html";
+    } else if (data.user.role === "entrepreneur") {
+      window.location.href = "tableau_de_bord_E.html";
+    } else {
+      alert("Rôle inconnu");
+    }
+
+  } catch (err) {
+    console.error("Erreur de connexion :", err);
+    alert("Erreur de connexion au serveur.");
+  }
+});
+</script>
+
+
+
+</body>
+
+</html>
